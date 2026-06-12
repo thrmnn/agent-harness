@@ -5,6 +5,15 @@ traces, regression evals. No LLM calls, no network; one dependency (pydantic).
 You bring the model — this is the part around it that should behave like
 ordinary software.
 
+## Goal
+
+Give teams shipping agentic products a minimal reference for the harness
+layer — the infrastructure between your model and your tools. Everything here
+is small enough to read in one sitting and plain enough to copy into your own
+codebase rather than depend on. It is also the reference implementation of
+the pattern I bring to [consulting engagements](https://thrmnn.github.io/consulting/):
+if you want to know how I think about agent reliability, read `src/`.
+
 ## Why
 
 Most agent failures in production are not model failures. They are harness
